@@ -1,0 +1,45 @@
+.graph-wrapper{
+    width: 200px;
+}
+.graph-plots{
+    border: 1px solid black;
+    padding: 20px
+}
+.sales-value-bar{
+    width: 50px;
+    position: relative;
+    left: calc(50% - 30px);
+    background-color: black;
+    margin: 10px 10px 0px 10px;
+}
+.sales-value-plot{
+    text-align: center;
+    position:relative;
+}
+.sales-bar-x-axis{
+    margin: 0px 10px 10px;
+    border: 1px solid grey;
+}
+.actual-sales-indicator-line, .sales-threshold-indicator{
+    position: absolute;
+    top: 0px;
+    border: 1px dashed black;
+    width: 125px;
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+}
+.actual-sales-indicator{
+    text-align: left;
+}
+.actual-sales-indicator-text{
+    position: absolute;
+    top: 0px;
+}
+.actual-sales-indicator{
+    top:0px;
+}
+div{
+    // border: 1px solid black;
+    margin: 1px;
+}

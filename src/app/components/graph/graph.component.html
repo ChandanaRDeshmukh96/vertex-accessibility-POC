@@ -1,0 +1,23 @@
+<div class="graph-wrapper">
+  <div class="graph-state-header">
+    {{stateName}}
+  </div>
+  <div class="graph-plots">
+    <div class="sales-value-plot">
+      <div class="sales-value-bar" [ngStyle]="{'height':actualSales+'px'}"></div>
+      <hr class="sales-bar-x-axis">
+      <div class="actual-sales-indicator">
+      <span class="actual-sales-indicator-text">actual</span>       
+      <hr class="actual-sales-indicator-line">
+      </div>
+      <hr class="sales-threshold-indicator" [ngStyle]="{'top':actualSales - salesThreshold+'px'}">
+      
+      <span>
+          sales value plot
+      </span>
+    </div>
+    <div class="transactions-value-plot">
+        transactions plot
+    </div>
+  </div>
+</div>

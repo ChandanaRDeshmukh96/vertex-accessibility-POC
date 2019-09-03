@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import {GraphComponent} from "../graph/graph.component";
 
 @Component({
-  selector: 'app-dashboard',
-  templateUrl: './dashboard.component.html',
-  styleUrls: ['./dashboard.component.scss']
+  selector: 'app-map1',
+  templateUrl: './map1.component.html',
+  styleUrls: ['./map1.component.scss']
 })
-export class DashboardComponent implements OnInit {
+export class Map1Component implements OnInit {
 
   zoomVal:object=[{height:'400px',width:'600px'},
             {height:'600px',width:'900px'},

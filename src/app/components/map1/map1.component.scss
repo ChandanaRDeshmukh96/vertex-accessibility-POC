@@ -1,0 +1,67 @@
+.state{
+  fill: white;
+  stroke: #00000054;
+  stroke-width: 0.8;
+  stroke-linejoin:round;
+}
+.map-container{
+  width:600px;
+  height:400px;
+  border: 1px solid black;
+  margin: 10px;
+  overflow: scroll;
+  position: relative;
+  left:30%;
+  background: aliceblue;
+}
+.map{
+  transition: all 1s ease-in-out;
+}
+.state:focus{
+  fill: rgb(127, 193, 255);
+  stroke: white;
+  stroke-width: 1px;
+  outline: none;
+  filter: url(#dropShadow);
+}
+// .state:focus{
+//   fill: rgb(127, 193, 255);
+//   stroke: white;
+//   outline: none;
+//   box-shadow: 10px 10px 78px black;
+//   position: relative;
+//   z-index: 10;
+//   // transition: all .1s ease-in-out;
+//   transform: translate(1px,1px);
+//   // transform: matrix3d(
+//   //     1.1,0,0,0,
+//   //     0,1.1,0,0,
+//   //     0,0,1,0,
+//   //     0,0,0,1
+//   //   );
+//   z-index: 10;
+//   margin: 10px;
+// }
+// .state:focus + .labels{
+//   stroke: #ffffff !important; 
+// }
+.labels, #lines{
+  // display: none;
+  // stroke: white;
+}
+.zoom-in, .zoom-out{
+  position: absolute;
+  left:80%;
+}
+.zoom-in{
+  top: 70%;
+}
+.zoom-out{
+  top: 80%;
+}
+
+// .state:hover{
+//   transition: all .1s ease-in-out;
+//   transform: translate(-2px,-2px);
+//   box-shadow: 10px 10px 5px red;
+// }
