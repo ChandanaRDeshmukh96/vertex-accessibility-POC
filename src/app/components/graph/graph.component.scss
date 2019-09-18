@@ -6,11 +6,11 @@
     padding: 20px
 }
 .sales-value-bar{
-    width: 50px;
+    height: 50px;
     position: relative;
-    left: calc(50% - 30px);
+    // left: calc(50% - 30px);
     background-color: black;
-    margin: 10px 10px 0px 10px;
+    // margin: 10px 10px 0px 10px;
 }
 .sales-value-plot{
     text-align: center;
@@ -42,4 +42,14 @@
 div{
     // border: 1px solid black;
     margin: 1px;
+}
+*{
+    transition: all 1s ease-in-out;
+}
+.axes{
+    border-left: 1px solid gray;
+    border-bottom: 1px solid gray;
+    height: 60px;
+    width: 200px;
+    padding: 25px 25px 25px 0px;
 }

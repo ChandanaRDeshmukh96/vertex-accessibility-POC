@@ -1,16 +1,18 @@
 <div class="graph-wrapper">
   <div class="graph-state-header">
-    {{stateName}}
+    {{stateCode}}
   </div>
   <div class="graph-plots">
     <div class="sales-value-plot">
-      <div class="sales-value-bar" [ngStyle]="{'height':actualSales+'px'}"></div>
-      <hr class="sales-bar-x-axis">
-      <div class="actual-sales-indicator">
-      <span class="actual-sales-indicator-text">actual</span>       
-      <hr class="actual-sales-indicator-line">
+      <div class="axes">
+          <div class="sales-value-bar" [ngStyle]="{'width':actualSales+'px'}"></div>
+          <!-- <hr class="sales-bar-x-axis">
+          <div class="actual-sales-indicator">
+          </div>
+          <hr class="sales-threshold-indicator" [ngStyle]="{'top':actualSales - salesThreshold+'px'}"> -->
       </div>
-      <hr class="sales-threshold-indicator" [ngStyle]="{'top':actualSales - salesThreshold+'px'}">
+
+      
       
       <span>
           sales value plot
@@ -20,4 +22,6 @@
         transactions plot
     </div>
   </div>
+<canvas id="myChart" width="400" height="400"></canvas>
+<canvas id='stackedBar' width="400" height="400"></canvas>
 </div>

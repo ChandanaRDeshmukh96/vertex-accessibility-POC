@@ -1,0 +1,67 @@
+.state{
+    fill: white;
+    stroke: #00000054;
+    stroke-width: 0.8;
+    stroke-linejoin:round;
+  }
+  .map-container{
+    width: fit-content;
+    padding: 30px;
+    border: 1px solid black;
+    margin: 10px;
+    position: relative;
+    // left:30%;
+    background: aliceblue;
+  }
+  .map{
+    transition: all 1s ease-in-out;
+  }
+  .state:focus {
+    fill: rgb(127, 193, 255);
+    stroke: white;
+    stroke-width: 1px;
+    outline: none;
+    filter: url(#dropShadow);
+        .exterior-line{
+            stroke: black;
+            stroke-width: 1;
+            stroke-linecap:"square";
+        }
+        .exterior{
+            stroke: black;
+            fill: black !important;
+        }
+    }
+    #ca, #AL{
+        fill: rgb(102, 217, 252);
+    }
+    #az, #ct{
+        fill: rgb(198, 83, 252);
+    }
+    #co, #fl{
+        fill: rgb(26, 28, 197);
+    }
+  .state-map-label{
+    stroke: white;
+    fill: white;
+    }
+    .exterior-line{
+        fill:none;
+        stroke:white;
+        stroke-linecap:"square";
+    }
+  //   .exterior{
+  //       stroke: black;
+  //   }
+  //   .exterior-line{
+  //     fill:none;
+  //     stroke:#cccccc;
+  //     stroke-linecap:"square";
+  //   }
+  //   #ca, #az, #co, #ct, #al, #fl{
+  //     fill: rgb(127, 193, 255);
+  //     stroke: white;
+  //     stroke-width: 1px;
+  //     outline: none;
+  //     filter: url(#dropShadow);
+  //   }
